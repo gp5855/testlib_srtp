@@ -6,7 +6,7 @@ old?
 
 # Object files
 *.o
-
+.vs
 # Libraries
 *.lib
 *.a
