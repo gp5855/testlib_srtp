@@ -242,6 +242,7 @@ source_group("src\\Replay" FILES ${REPLAY_SOURCES_C})
 source_group("include" FILES ${SOURCES_H})
 
 add_library(srtp2
+  SHARED
   ${SOURCES_C}
   ${CIPHERS_SOURCES_C}
   ${HASHES_SOURCES_C}
