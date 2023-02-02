@@ -1,0 +1,68 @@
+Determining if the include file machine/types.h exists failed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/build_armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4099c/fast && /usr/bin/make -f CMakeFiles/cmTC_4099c.dir/build.make CMakeFiles/cmTC_4099c.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/build_armeabi-v7a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4099c.dir/CheckIncludeFile.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_4099c.dir/CheckIncludeFile.c.o   -c /home/symbol/test/testlib_srtp/build_armeabi-v7a/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/symbol/test/testlib_srtp/build_armeabi-v7a/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'machine/types.h' file not found
+#include <machine/types.h>
+         ^~~~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_4099c.dir/build.make:66: CMakeFiles/cmTC_4099c.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/build_armeabi-v7a/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_4099c/fast] Error 2
+
+
+
+Determining if the include file sys/int_types.h exists failed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/build_armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1b2d2/fast && /usr/bin/make -f CMakeFiles/cmTC_1b2d2.dir/build.make CMakeFiles/cmTC_1b2d2.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/build_armeabi-v7a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1b2d2.dir/CheckIncludeFile.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_1b2d2.dir/CheckIncludeFile.c.o   -c /home/symbol/test/testlib_srtp/build_armeabi-v7a/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/symbol/test/testlib_srtp/build_armeabi-v7a/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'sys/int_types.h' file not found
+#include <sys/int_types.h>
+         ^~~~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_1b2d2.dir/build.make:66: CMakeFiles/cmTC_1b2d2.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/build_armeabi-v7a/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_1b2d2/fast] Error 2
+
+
+
+Determining if the include file windows.h exists failed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/build_armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5164e/fast && /usr/bin/make -f CMakeFiles/cmTC_5164e.dir/build.make CMakeFiles/cmTC_5164e.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/build_armeabi-v7a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5164e.dir/CheckIncludeFile.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_5164e.dir/CheckIncludeFile.c.o   -c /home/symbol/test/testlib_srtp/build_armeabi-v7a/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/symbol/test/testlib_srtp/build_armeabi-v7a/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'windows.h' file not found
+#include <windows.h>
+         ^~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_5164e.dir/build.make:66: CMakeFiles/cmTC_5164e.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/build_armeabi-v7a/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_5164e/fast] Error 2
+
+
+
+Determining if the include file winsock2.h exists failed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/build_armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1a023/fast && /usr/bin/make -f CMakeFiles/cmTC_1a023.dir/build.make CMakeFiles/cmTC_1a023.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/build_armeabi-v7a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1a023.dir/CheckIncludeFile.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_1a023.dir/CheckIncludeFile.c.o   -c /home/symbol/test/testlib_srtp/build_armeabi-v7a/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/symbol/test/testlib_srtp/build_armeabi-v7a/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'winsock2.h' file not found
+#include <winsock2.h>
+         ^~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_1a023.dir/build.make:66: CMakeFiles/cmTC_1a023.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/build_armeabi-v7a/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_1a023/fast] Error 2
+
+
+

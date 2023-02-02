@@ -1,0 +1,505 @@
+The target system is: Android - 1 - aarch64
+The host system is: Linux - 5.15.0-56-generic - x86_64
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ba60c/fast && /usr/bin/make -f CMakeFiles/cmTC_ba60c.dir/build.make CMakeFiles/cmTC_ba60c.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ba60c.dir/testCCompiler.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_ba60c.dir/testCCompiler.c.o   -c /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_ba60c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba60c.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_ba60c.dir/testCCompiler.c.o  -o cmTC_ba60c  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7228a/fast && /usr/bin/make -f CMakeFiles/cmTC_7228a.dir/build.make CMakeFiles/cmTC_7228a.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7228a.dir/CMakeCCompilerABI.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE   -v -o CMakeFiles/cmTC_7228a.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c
+Android (9352603, based on r450784d1) clang version 14.0.7 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)
+Target: aarch64-none-linux-android26
+Thread model: posix
+InstalledDir: /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin
+ (in-process)
+ "/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple aarch64-none-linux-android26 -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp -resource-dir /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7 -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/include -internal-isystem /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -Werror=format-security -fdebug-compilation-dir=/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7228a.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c
+clang -cc1 version 14.0.7 based upon LLVM 14.0.7git default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/include
+ /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include
+ /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android
+ /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include
+End of search list.
+Linking C executable cmTC_7228a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7228a.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_7228a.dir/CMakeCCompilerABI.c.o  -o cmTC_7228a 
+Android (9352603, based on r450784d1) clang version 14.0.7 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)
+Target: aarch64-none-linux-android26
+Thread model: posix
+InstalledDir: /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin
+ "/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/ld" --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 --warn-shared-textrel -z now -z relro -z max-page-size=4096 --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_7228a /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/26/crtbegin_dynamic.o -L/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/lib/linux/aarch64 -L/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/26 -L/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --fatal-warnings --no-undefined CMakeFiles/cmTC_7228a.dir/CMakeCCompilerABI.c.o /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/26/crtend_android.o
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/include]
+    add: [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include]
+    add: [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+    add: [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+  end of search list found
+  collapse include dir [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/include] ==> [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/include]
+  collapse include dir [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include] ==> [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include]
+  collapse include dir [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android] ==> [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+  collapse include dir [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include] ==> [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+  implicit include dirs: [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/include;/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include;/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android;/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_7228a/fast && /usr/bin/make -f CMakeFiles/cmTC_7228a.dir/build.make CMakeFiles/cmTC_7228a.dir/build]
+  ignore line: [make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_7228a.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE   -v -o CMakeFiles/cmTC_7228a.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
+  ignore line: [Android (9352603  based on r450784d1) clang version 14.0.7 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)]
+  ignore line: [Target: aarch64-none-linux-android26]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin]
+  ignore line: [ (in-process)]
+  ignore line: [ "/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple aarch64-none-linux-android26 -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp -resource-dir /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7 -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/include -internal-isystem /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -Werror=format-security -fdebug-compilation-dir=/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7228a.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 14.0.7 based upon LLVM 14.0.7git default target x86_64-unknown-linux-gnu]
+  ignore line: [ignoring nonexistent directory "/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/include]
+  ignore line: [ /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include]
+  ignore line: [ /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+  ignore line: [ /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [Linking C executable cmTC_7228a]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7228a.dir/link.txt --verbose=1]
+  ignore line: [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl --build-id=sha1 -Wl --no-rosegment -Wl --fatal-warnings -Wl --no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_7228a.dir/CMakeCCompilerABI.c.o  -o cmTC_7228a ]
+  ignore line: [Android (9352603  based on r450784d1) clang version 14.0.7 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)]
+  ignore line: [Target: aarch64-none-linux-android26]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin]
+  link line: [ "/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/ld" --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 --warn-shared-textrel -z now -z relro -z max-page-size=4096 --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_7228a /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/26/crtbegin_dynamic.o -L/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/lib/linux/aarch64 -L/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/26 -L/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --fatal-warnings --no-undefined CMakeFiles/cmTC_7228a.dir/CMakeCCompilerABI.c.o /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/26/crtend_android.o]
+    arg [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/ld] ==> ignore
+    arg [--sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-EL] ==> ignore
+    arg [--fix-cortex-a53-843419] ==> ignore
+    arg [--warn-shared-textrel] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-zmax-page-size=4096] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [aarch64linux] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/system/bin/linker64] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_7228a] ==> ignore
+    arg [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/26/crtbegin_dynamic.o] ==> ignore
+    arg [-L/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/lib/linux/aarch64] ==> dir [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/lib/linux/aarch64]
+    arg [-L/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/26] ==> dir [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/26]
+    arg [-L/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android] ==> dir [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android]
+    arg [-L/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> dir [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+    arg [--build-id=sha1] ==> ignore
+    arg [--no-rosegment] ==> ignore
+    arg [--fatal-warnings] ==> ignore
+    arg [--no-undefined] ==> ignore
+    arg [CMakeFiles/cmTC_7228a.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/lib/linux/libclang_rt.builtins-aarch64-android.a]
+    arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+    arg [-ldl] ==> lib [dl]
+    arg [-lc] ==> lib [c]
+    arg [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/lib/linux/libclang_rt.builtins-aarch64-android.a]
+    arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+    arg [-ldl] ==> lib [dl]
+    arg [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/26/crtend_android.o] ==> ignore
+  remove lib [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/lib/linux/libclang_rt.builtins-aarch64-android.a]
+  remove lib [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/lib/linux/libclang_rt.builtins-aarch64-android.a]
+  collapse library dir [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/lib/linux/aarch64] ==> [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/lib/linux/aarch64]
+  collapse library dir [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/26] ==> [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/26]
+  collapse library dir [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android] ==> [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android]
+  collapse library dir [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+  implicit libs: [-l:libunwind.a;dl;c;-l:libunwind.a;dl]
+  implicit dirs: [/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/lib/linux/aarch64;/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/26;/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android;/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+  implicit fwks: []
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3c574/fast && /usr/bin/make -f CMakeFiles/cmTC_3c574.dir/build.make CMakeFiles/cmTC_3c574.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c574.dir/CheckIncludeFile.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_3c574.dir/CheckIncludeFile.c.o   -c /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_3c574
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c574.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_3c574.dir/CheckIncludeFile.c.o  -o cmTC_3c574  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a4d81/fast && /usr/bin/make -f CMakeFiles/cmTC_a4d81.dir/build.make CMakeFiles/cmTC_a4d81.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a4d81.dir/CheckIncludeFile.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_a4d81.dir/CheckIncludeFile.c.o   -c /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_a4d81
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4d81.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_a4d81.dir/CheckIncludeFile.c.o  -o cmTC_a4d81  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_379b6/fast && /usr/bin/make -f CMakeFiles/cmTC_379b6.dir/build.make CMakeFiles/cmTC_379b6.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_379b6.dir/CheckIncludeFile.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_379b6.dir/CheckIncludeFile.c.o   -c /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_379b6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_379b6.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_379b6.dir/CheckIncludeFile.c.o  -o cmTC_379b6  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_78d18/fast && /usr/bin/make -f CMakeFiles/cmTC_78d18.dir/build.make CMakeFiles/cmTC_78d18.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_78d18.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_78d18.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o   -c /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTC_78d18
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78d18.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_78d18.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o  -o cmTC_78d18  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a35b1/fast && /usr/bin/make -f CMakeFiles/cmTC_a35b1.dir/build.make CMakeFiles/cmTC_a35b1.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a35b1.dir/TestEndianess.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_a35b1.dir/TestEndianess.c.o   -c /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTC_a35b1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a35b1.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_a35b1.dir/TestEndianess.c.o  -o cmTC_a35b1  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the include file arpa/inet.h exists passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ad41b/fast && /usr/bin/make -f CMakeFiles/cmTC_ad41b.dir/build.make CMakeFiles/cmTC_ad41b.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ad41b.dir/CheckIncludeFile.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_ad41b.dir/CheckIncludeFile.c.o   -c /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ad41b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad41b.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_ad41b.dir/CheckIncludeFile.c.o  -o cmTC_ad41b  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file byteswap.h exists passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b3f5d/fast && /usr/bin/make -f CMakeFiles/cmTC_b3f5d.dir/build.make CMakeFiles/cmTC_b3f5d.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b3f5d.dir/CheckIncludeFile.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_b3f5d.dir/CheckIncludeFile.c.o   -c /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b3f5d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b3f5d.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_b3f5d.dir/CheckIncludeFile.c.o  -o cmTC_b3f5d  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_66b16/fast && /usr/bin/make -f CMakeFiles/cmTC_66b16.dir/build.make CMakeFiles/cmTC_66b16.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_66b16.dir/CheckIncludeFile.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_66b16.dir/CheckIncludeFile.c.o   -c /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_66b16
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66b16.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_66b16.dir/CheckIncludeFile.c.o  -o cmTC_66b16  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file netinet/in.h exists passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_61661/fast && /usr/bin/make -f CMakeFiles/cmTC_61661.dir/build.make CMakeFiles/cmTC_61661.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_61661.dir/CheckIncludeFile.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_61661.dir/CheckIncludeFile.c.o   -c /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_61661
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61661.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_61661.dir/CheckIncludeFile.c.o  -o cmTC_61661  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c045a/fast && /usr/bin/make -f CMakeFiles/cmTC_c045a.dir/build.make CMakeFiles/cmTC_c045a.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c045a.dir/CheckIncludeFile.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_c045a.dir/CheckIncludeFile.c.o   -c /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_c045a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c045a.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_c045a.dir/CheckIncludeFile.c.o  -o cmTC_c045a  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/socket.h exists passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_18e45/fast && /usr/bin/make -f CMakeFiles/cmTC_18e45.dir/build.make CMakeFiles/cmTC_18e45.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_18e45.dir/CheckIncludeFile.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_18e45.dir/CheckIncludeFile.c.o   -c /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_18e45
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18e45.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_18e45.dir/CheckIncludeFile.c.o  -o cmTC_18e45  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c18d4/fast && /usr/bin/make -f CMakeFiles/cmTC_c18d4.dir/build.make CMakeFiles/cmTC_c18d4.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c18d4.dir/CheckIncludeFile.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_c18d4.dir/CheckIncludeFile.c.o   -c /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_c18d4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c18d4.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_c18d4.dir/CheckIncludeFile.c.o  -o cmTC_c18d4  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function sigaction exists passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c9d7f/fast && /usr/bin/make -f CMakeFiles/cmTC_c9d7f.dir/build.make CMakeFiles/cmTC_c9d7f.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c9d7f.dir/CheckFunctionExists.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=sigaction -fPIE   -o CMakeFiles/cmTC_c9d7f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c9d7f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9d7f.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=sigaction  -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_c9d7f.dir/CheckFunctionExists.c.o  -o cmTC_c9d7f  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function inet_aton exists passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_79571/fast && /usr/bin/make -f CMakeFiles/cmTC_79571.dir/build.make CMakeFiles/cmTC_79571.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_79571.dir/CheckFunctionExists.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=inet_aton -fPIE   -o CMakeFiles/cmTC_79571.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_79571
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79571.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=inet_aton  -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_79571.dir/CheckFunctionExists.c.o  -o cmTC_79571  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function inet_pton exists passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b2a12/fast && /usr/bin/make -f CMakeFiles/cmTC_b2a12.dir/build.make CMakeFiles/cmTC_b2a12.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b2a12.dir/CheckFunctionExists.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=inet_pton -fPIE   -o CMakeFiles/cmTC_b2a12.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b2a12
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2a12.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=inet_pton  -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_b2a12.dir/CheckFunctionExists.c.o  -o cmTC_b2a12  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function usleep exists passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b84c8/fast && /usr/bin/make -f CMakeFiles/cmTC_b84c8.dir/build.make CMakeFiles/cmTC_b84c8.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b84c8.dir/CheckFunctionExists.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=usleep -fPIE   -o CMakeFiles/cmTC_b84c8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b84c8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b84c8.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=usleep  -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_b84c8.dir/CheckFunctionExists.c.o  -o cmTC_b84c8  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of uint8_t passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f0620/fast && /usr/bin/make -f CMakeFiles/cmTC_f0620.dir/build.make CMakeFiles/cmTC_f0620.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f0620.dir/UINT8_T.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_f0620.dir/UINT8_T.c.o   -c /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CheckTypeSize/UINT8_T.c
+Linking C executable cmTC_f0620
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0620.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_f0620.dir/UINT8_T.c.o  -o cmTC_f0620  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of uint16_t passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4b9d0/fast && /usr/bin/make -f CMakeFiles/cmTC_4b9d0.dir/build.make CMakeFiles/cmTC_4b9d0.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4b9d0.dir/UINT16_T.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_4b9d0.dir/UINT16_T.c.o   -c /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CheckTypeSize/UINT16_T.c
+Linking C executable cmTC_4b9d0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b9d0.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_4b9d0.dir/UINT16_T.c.o  -o cmTC_4b9d0  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of uint32_t passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6ce89/fast && /usr/bin/make -f CMakeFiles/cmTC_6ce89.dir/build.make CMakeFiles/cmTC_6ce89.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6ce89.dir/UINT32_T.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_6ce89.dir/UINT32_T.c.o   -c /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CheckTypeSize/UINT32_T.c
+Linking C executable cmTC_6ce89
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ce89.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_6ce89.dir/UINT32_T.c.o  -o cmTC_6ce89  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of uint64_t passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f9f8c/fast && /usr/bin/make -f CMakeFiles/cmTC_f9f8c.dir/build.make CMakeFiles/cmTC_f9f8c.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f9f8c.dir/UINT64_T.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_f9f8c.dir/UINT64_T.c.o   -c /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CheckTypeSize/UINT64_T.c
+Linking C executable cmTC_f9f8c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9f8c.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_f9f8c.dir/UINT64_T.c.o  -o cmTC_f9f8c  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of int32_t passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_46cee/fast && /usr/bin/make -f CMakeFiles/cmTC_46cee.dir/build.make CMakeFiles/cmTC_46cee.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_46cee.dir/INT32_T.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_46cee.dir/INT32_T.c.o   -c /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CheckTypeSize/INT32_T.c
+Linking C executable cmTC_46cee
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46cee.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_46cee.dir/INT32_T.c.o  -o cmTC_46cee  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of unsigned long passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_136e0/fast && /usr/bin/make -f CMakeFiles/cmTC_136e0.dir/build.make CMakeFiles/cmTC_136e0.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_136e0.dir/SIZEOF_UNSIGNED_LONG.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_136e0.dir/SIZEOF_UNSIGNED_LONG.c.o   -c /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CheckTypeSize/SIZEOF_UNSIGNED_LONG.c
+Linking C executable cmTC_136e0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_136e0.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_136e0.dir/SIZEOF_UNSIGNED_LONG.c.o  -o cmTC_136e0  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of unsigned long long passed with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4b7fb/fast && /usr/bin/make -f CMakeFiles/cmTC_4b7fb.dir/build.make CMakeFiles/cmTC_4b7fb.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4b7fb.dir/SIZEOF_UNSIGNED_LONG_LONG.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_4b7fb.dir/SIZEOF_UNSIGNED_LONG_LONG.c.o   -c /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CheckTypeSize/SIZEOF_UNSIGNED_LONG_LONG.c
+Linking C executable cmTC_4b7fb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b7fb.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_4b7fb.dir/SIZEOF_UNSIGNED_LONG_LONG.c.o  -o cmTC_4b7fb  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test HAVE_INLINE succeeded with the following output:
+Change Dir: /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3f4b5/fast && /usr/bin/make -f CMakeFiles/cmTC_3f4b5.dir/build.make CMakeFiles/cmTC_3f4b5.dir/build
+make[1]: Entering directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3f4b5.dir/src.c.o
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -DHAVE_INLINE -fPIE   -o CMakeFiles/cmTC_3f4b5.dir/src.c.o   -c /home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_3f4b5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f4b5.dir/link.txt --verbose=1
+/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android26 --sysroot=/home/symbol/Android/Sdk/ndk/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -DHAVE_INLINE  -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_3f4b5.dir/src.c.o  -o cmTC_3f4b5  -latomic -lm 
+make[1]: Leaving directory '/home/symbol/test/testlib_srtp/arm64-v8a/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+inline void func(); void func() { } int main() { func(); return 0; }
